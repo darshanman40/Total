@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.manchekar.darshan.total"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/kisuke"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Totals"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.manchekar.darshan.total.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.manchekar.darshan.total.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.manchekar.darshan.total.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Prefs"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.manchekar.darshan.total.PREFS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".AboutUs"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.manchekar.darshan.total.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name=".SQLView"
+            
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.manchekar.darshan.total.SQLVIE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".TextPlay"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name=".Email"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name=".Camera"
+            android:label="Camera Application" 
+            android:screenOrientation="portrait"
+            >
+            
+        </activity>
+        <activity
+            android:name=".Data"
+            android:label="Data Application" 
+            android:screenOrientation="portrait"
+            >
+        </activity>
+            <activity
+            android:name=".GFX"
+            android:label="Data Application" 
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:name=".GFXSurface"
+            android:label="Data Application" 
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        
+        <activity
+            android:name=".SoundStuff"
+            android:label="Sound Explosion" 
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        
+        <activity
+            android:name=".Slider"
+            android:label="Slide" 
+            android:screenOrientation="portrait"
+            >
+        </activity>
+            
+        <activity
+            android:name=".OpenedClass"
+            android:label="Data Application" 
+            android:screenOrientation="portrait"
+            >            
+        </activity>
+        <activity
+            android:name=".Tabs"
+            android:label="Tabs" 
+            android:screenOrientation="portrait"
+            >            
+        </activity>
+       
+        <activity
+            android:name=".SimpleBrowser"
+            android:label="Tabs" 
+            android:screenOrientation="portrait"
+            >            
+        </activity>
+        
+        <activity
+            android:name=".Flipper"
+            android:label="Flipper" 
+            android:screenOrientation="portrait"
+            >            
+        </activity>
+        
+        <activity
+            android:name=".SharedPrefs"
+            android:label="Shared Preferences" 
+            android:screenOrientation="portrait"
+            > 
+             </activity>
+             <activity
+            android:name=".InternalData"
+            android:label="Internal Shared Preferences" 
+            android:screenOrientation="portrait"
+            >  </activity>
+            
+                  <activity
+            android:name=".ExternalData"
+            android:label="External Shared Preferences" 
+            android:screenOrientation="portrait"
+            > 
+        </activity>
+        <activity
+            android:name=".SQLiteExample"
+            android:label="Hot Or Not" 
+            android:screenOrientation="portrait"
+            >
+            
+            
+        </activity>
+        
+        <activity
+            android:name=".Accelerate"
+            android:label="Accelerate" 
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        
+        <activity
+            android:name=".HttpExample"
+            android:label="Http Example" 
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        </application>
+
+</manifest>

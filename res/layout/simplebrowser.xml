@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+     <Button
+         android:id="@+id/bBack"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/etURL"
+         android:text="Go Back a page" />
+
+     <Button
+         android:id="@+id/bGo"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/etURL"
+         android:layout_alignBottom="@+id/etURL"
+         android:layout_alignParentRight="true"
+         android:text="Go" />
+
+     <EditText
+         android:id="@+id/etURL"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_toLeftOf="@+id/bGo"
+         android:ems="10" />
+     
+     <WebView
+         android:id="@+id/wvBrowser"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/bRefresh" />
+
+     <Button
+         android:id="@+id/bForward"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/etURL"
+         android:text="Go Forward" />
+
+     <Button
+         android:id="@+id/bHistory"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/bRefresh"
+         android:layout_toRightOf="@+id/bBack"
+         android:text="Clear History" />
+
+     <Button
+         android:id="@+id/bRefresh"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/bBack"
+         android:layout_centerHorizontal="true"
+         android:text="Refresh Page" />
+ 
+</RelativeLayout>
